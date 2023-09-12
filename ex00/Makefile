@@ -6,7 +6,7 @@
 #    By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/09 16:39:17 by abenheni          #+#    #+#              #
-#    Updated: 2023/09/09 16:59:35 by abenheni         ###   ########.fr        #
+#    Updated: 2023/09/12 13:48:57 by abenheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,4 +26,3 @@ clean :
 fclean : clean
 	$(RM) $(NAME)
 re : fclean all
-.phony : all clean fclean $(NAME)

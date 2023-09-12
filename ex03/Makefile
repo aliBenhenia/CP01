@@ -6,7 +6,7 @@
 #    By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/10 15:47:27 by abenheni          #+#    #+#              #
-#    Updated: 2023/09/10 17:56:09 by abenheni         ###   ########.fr        #
+#    Updated: 2023/09/12 18:35:45 by abenheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ)  -o $(NAME)
 %.o : %.cpp Weapon.hpp HumanB.hpp HumanA.hpp
-	$(CC) $(CFLAGS)  -c $< -o $@ 
+	$(CC) $(CFLAGS)  -c $< -o $@
 clean :
 	$(RM) $(OBJ)
 fclean : clean

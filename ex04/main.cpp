@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 10:18:24 by abenheni          #+#    #+#             */
-/*   Updated: 2023/09/11 11:46:46 by abenheni         ###   ########.fr       */
+/*   Updated: 2023/09/12 19:44:58 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main(int ac, char **av)
     {
         while (getline(file, str))
         {
-            if (str.find(av[2]) != std :: string :: npos)
+            while (str.find(av[2]) != std :: string :: npos)
                 replaceSubstr(&str,av[2], av[3], str.find(av[2]));
             replace << str << "\n";
         }
