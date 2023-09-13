@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 15:58:15 by abenheni          #+#    #+#             */
-/*   Updated: 2023/09/13 11:39:48 by abenheni         ###   ########.fr       */
+/*   Updated: 2023/09/13 13:39:53 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ void HumanB :: attack()
     std :: cout << name << " attacks with their " << weap->getType() << "\n";
 }
 
-void HumanB :: setWeapon(Weapon *obj)
+void HumanB :: setWeapon(Weapon &obj)
 {
-    if(!obj)
-        return;
-    weap = obj;
+    weap = &obj;
 }
