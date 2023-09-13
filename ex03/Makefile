@@ -6,13 +6,13 @@
 #    By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/10 15:47:27 by abenheni          #+#    #+#              #
-#    Updated: 2023/09/12 18:35:45 by abenheni         ###   ########.fr        #
+#    Updated: 2023/09/13 11:28:27 by abenheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Weapon
 CC = c++
-RM = rm -f
+RM = rm -f 
 CFLAGS = -Wall -Wextra -Werror -std=c++98 
 SRC =  main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJ = $(SRC:%.cpp=%.o)

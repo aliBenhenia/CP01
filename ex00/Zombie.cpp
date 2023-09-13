@@ -2,7 +2,7 @@
 
 void Zombie :: announce()
 {
-    std :: cout << name << ": BraiiiiiiinnnzzzZ...\n";
+    std :: cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 Zombie :: Zombie(std :: string n)
@@ -12,5 +12,5 @@ Zombie :: Zombie(std :: string n)
 
 Zombie :: ~Zombie()
 {
-    std :: cout << name << " : destructor\n";
+    std :: cout << name << " : destructor" << std::endl;
 }

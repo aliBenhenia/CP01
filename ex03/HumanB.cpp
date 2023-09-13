@@ -6,15 +6,16 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 15:58:15 by abenheni          #+#    #+#             */
-/*   Updated: 2023/09/10 16:33:34 by abenheni         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:39:48 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB :: HumanB(std :: string n)
+HumanB :: HumanB(std :: string n) :weap(NULL), name(n)
 {
-    name = n;
+
+        
 }
 
 HumanB :: HumanB(std :: string n, Weapon &obj)
@@ -25,9 +26,14 @@ HumanB :: HumanB(std :: string n, Weapon &obj)
 
 void HumanB :: attack()
 {
+    if(!weap)
+        return;
     std :: cout << name << " attacks with their " << weap->getType() << "\n";
 }
-void HumanB :: setWeapon(Weapon &obj)
+
+void HumanB :: setWeapon(Weapon *obj)
 {
-    weap = &obj;
+    if(!obj)
+        return;
+    weap = obj;
 }

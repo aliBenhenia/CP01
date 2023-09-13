@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 15:58:17 by abenheni          #+#    #+#             */
-/*   Updated: 2023/09/10 16:33:06 by abenheni         ###   ########.fr       */
+/*   Updated: 2023/09/12 22:24:03 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class HumanB
         HumanB(std :: string n);
         HumanB(std :: string n ,Weapon &obj);
         void attack();
-        void setWeapon(Weapon &obj);
+        void setWeapon(Weapon *obj);
 };
  
 #endif

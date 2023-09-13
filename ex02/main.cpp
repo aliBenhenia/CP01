@@ -8,7 +8,7 @@ int main()
     std :: string &ref = str;
 
     std :: cout << &str << "\n";
-    std :: cout << &ptr << "\n";
+    std :: cout << ptr << "\n";
     std :: cout << &ref << "\n";
 
     std :: cout << str << "\n";

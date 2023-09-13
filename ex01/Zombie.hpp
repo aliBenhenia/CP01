@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 18:20:28 by abenheni          #+#    #+#             */
-/*   Updated: 2023/09/09 18:20:29 by abenheni         ###   ########.fr       */
+/*   Updated: 2023/09/12 20:25:00 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ class Zombie
         Zombie();
         void announce();
         void setName(std :: string n);
+        ~Zombie();
+        
 };
 
 Zombie* zombieHorde( int N, std::string name);

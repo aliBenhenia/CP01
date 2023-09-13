@@ -6,7 +6,8 @@ Weapon :: Weapon(std :: string t)
     type = t;
 }
 
-const std :: string &Weapon :: getType() const{
+const std :: string &Weapon :: getType() const
+{
     return (type);
 }
 
